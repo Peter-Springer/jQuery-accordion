@@ -1,3 +1,3 @@
 $('.accordion-button').on('click', function() {
-  console.log('hello');
+  $(this).next().removeAttr('hidden')
 })
