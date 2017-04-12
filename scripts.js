@@ -1,3 +1,7 @@
 $('.accordion-button').on('click', function() {
-  $(this).next().removeAttr('hidden')
+  if ($(this).next().attr('hidden')) {
+    $(this).next().removeAttr('hidden')
+  } else {
+    $(this).next().attr('hidden', true)
+  }
 })
